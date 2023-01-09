@@ -1,3 +1,3 @@
 # VisionManagement360
 
-App web programada con Reack, Javascript y css para la gestión de sistemas de visión:
+App web programada con React, Javascript y css para la gestión de sistemas de visión:
