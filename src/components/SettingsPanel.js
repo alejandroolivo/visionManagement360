@@ -15,23 +15,43 @@ const SettingDisplay = (props) => {
     );
 };
 
-const SettingsPanel = (props) => {
-    
-    return(
-        <div  className={"VSConfigPage-panel-global"}> 
-            <div className={"VSConfigPage-panel"}>
+const AppConfigForm = (props) => {
+    return (
+        <div className={"VSConfigPage-panel"}>
                 <form class="form">
                     <h2>App.Config Settings</h2>
-                    <SettingDisplay name='Vision Library:' descripcion={'Nombre del vision system...'}></SettingDisplay>
-                    <SettingDisplay name='Communications::' descripcion={'N/S del vision system...'}></SettingDisplay>
-                    <SettingDisplay name='IP:' descripcion={'IP del vision system...'}></SettingDisplay>
-                    <SettingDisplay name='Port:' descripcion={'Puerto del vision system...'}></SettingDisplay>
-                    
+                    <SettingDisplay name='Image Processing Library:' descripcion={' '}></SettingDisplay>
+                    <SettingDisplay name='Communications Device:' descripcion={' '}></SettingDisplay>
+                    <SettingDisplay name='Communications Device Count:' descripcion={' '}></SettingDisplay>
+                    <SettingDisplay name='TcpComs IP:' descripcion={' '}></SettingDisplay>
+                    <SettingDisplay name='TcpComs Port:' descripcion={' '}></SettingDisplay>
+                    <SettingDisplay name='HeartBit Enabled:' descripcion={' '}></SettingDisplay>
                     <h4></h4>
                     <button className="Button-VSConfPage" >Save App.Config</button>
                     <h4></h4>
                 </form>
-            </div>      
+            </div> 
+    );
+};
+
+const InfoForm = (props) => {
+    return (
+        <div className={"VSConfigPage-panel"}>
+            <form class="form">
+                <h2>Information</h2>
+                <h4 className={"Info-text-class"}>{props.text}</h4>
+                <button className="Button-VSConfPage" >More info</button>
+                <h4></h4>
+            </form>
+        </div>
+    );
+};
+
+const SettingsPanel = (props) => {
+    
+    return(
+        <div  className={"VSConfigPage-panel-global"}> 
+            <AppConfigForm></AppConfigForm>     
             <div className={"VSConfigPage-panel"}>
                 <form class="form">
                     <h2>VisionSystem</h2>
@@ -58,14 +78,7 @@ const SettingsPanel = (props) => {
                     <h4></h4>
                 </form>
             </div>          
-            <div className={"VSConfigPage-panel"}>
-                <form class="form">
-                    <h2>Information</h2>
-                    <h4></h4>
-                    <button className="Button-VSConfPage" >More info</button>
-                    <h4></h4>
-                </form>
-            </div>    
+            <InfoForm text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus, quam ut maximus dignissim, ipsum eros pellentesque nisi, vitae dictum elit justo posuere sem. Morbi vitae nisl varius, laoreet nisi vel, tincidunt ante. Aliquam bibendum gravida augue, non egestas mauris blandit ut. Fusce quam massa, auctor non nisl id, rutrum molestie justo. Nam eleifend, nisl ut condimentum convallis, nisl est suscipit tellus, et tincidunt ligula eros vel mi. Quisque varius metus in tortor bibendum viverra. Pellentesque varius, purus ut cursus mollis, enim dui euismod dolor, eget egestas nibh ante ut ex. Phasellus vel purus eget leo pretium facilisis. Cras lacinia erat id metus venenatis, in commodo mauris malesuada. Donec nec mi nibh. Pellentesque nec odio vitae nulla sollicitudin ultrices. In lobortis ullamcorper sem, nec imperdiet velit viverra vitae. Nulla euismod elit id massa molestie accumsan at vitae arcu. Ut finibus justo a euismod blandit. Sed ut porta est, eget suscipit ipsum."></InfoForm>
         </div>
     );
 };

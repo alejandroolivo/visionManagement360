@@ -35,9 +35,10 @@ function App() {
       </div>
       <body className="App-body">    
         <Routes>
-          <Route path='/' element={<HomePage ></HomePage>  } />
-          <Route path='/VSConfPage' element={<VisionSystemConfPage ></VisionSystemConfPage>  } />
-          <Route path='/DLToolsPage' element={<DeepLearningToolsPage ></DeepLearningToolsPage>  } />
+          <Route path='/' element={<HomePage ></HomePage> } />
+          <Route path='/VSConfPage' element={<VisionSystemConfPage ></VisionSystemConfPage> } />
+          <Route path='/DLToolsPage' element={<DeepLearningToolsPage ></DeepLearningToolsPage> } />
+          <Route path='/hola' element={<DeepLearningToolsPage ></DeepLearningToolsPage> } />
         </Routes>        
         <p>
           

@@ -24,6 +24,15 @@ h2{
     
 }
 
+.Info-text-class{
+    font-weight: 100;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: inherit;
+    letter-spacing: 1px;
+}
+
 input{
     width:30%;
     padding:5px;

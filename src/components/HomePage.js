@@ -11,11 +11,13 @@ const HomePage = (props) => {
     const className = onMouseOverValue ? "Main-button-class" : "Main-button-class-highlighted"
 
     return(
+      <div>
         <div id='panel' className="App-panel">
           <MainButton source={imgVSManager} title={'Vision System Manager'} ruta={'/VSConfPage'}/>
           <MainButton source={imgDLTools} title={'Deep Learning Tools'} ruta={'/DLToolsPage'}/>
           <MainButton source={imgCortexCP} title={'Cortex Control Panel'} ruta={'/CortexCPPage'}/>
         </div>
+      </div>        
     );
 };
 
