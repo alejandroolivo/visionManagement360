@@ -5,7 +5,15 @@ import './Components.css';
 import imgSource from './resources/treeview.png';
 import imgEnterSource from './resources/move.png';
 
-import SettingDisplay from './SettingDisplay'
+const SettingDisplay = (props) => {
+    
+    return(
+        <div className={"VSConfigPage-panel-setting"}>              
+            <p type={props.name}></p>
+            <input placeholder={props.description}></input>
+        </div>
+    );
+};
 
 const SettingsPanel = (props) => {
     

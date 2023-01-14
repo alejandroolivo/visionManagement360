@@ -12,9 +12,9 @@ const HomePage = (props) => {
 
     return(
         <div id='panel' className="App-panel">
-          <MainButton source={imgVSManager} title={'Vision System Manager'} />
-          <MainButton source={imgDLTools} title={'Deep Learning Tools'} />
-          <MainButton source={imgCortexCP} title={'Cortex Control Panel'} />
+          <MainButton source={imgVSManager} title={'Vision System Manager'} ruta={'/VSConfPage'}/>
+          <MainButton source={imgDLTools} title={'Deep Learning Tools'} ruta={'/DLToolsPage'}/>
+          <MainButton source={imgCortexCP} title={'Cortex Control Panel'} ruta={'/CortexCPPage'}/>
         </div>
     );
 };

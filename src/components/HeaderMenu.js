@@ -6,14 +6,14 @@ import imageLogo from './resources/cortex360logo.jpg';
 
 const HeaderMenuItem = (props) => {  
   const [onMouseOverValue, setOnMouseOverValue] = useState([true])
-  // const className = onMouseOverValue ? "Header-menu-item-class" : "Header-menu-item-class-highlighted";
+  
   const className =  "Header-button-class";
   return (
-    <li className={className}>
-        <Link to={props.ruta} onMouseEnter={() => setOnMouseOverValue(false)} onMouseLeave={() => setOnMouseOverValue(true)}>
-          {props.texto}
+    
+        <Link to={props.ruta} className={className} onMouseEnter={() => setOnMouseOverValue(false)} onMouseLeave={() => setOnMouseOverValue(true)}>
+          <li >{props.texto}</li>
         </Link>
-    </li>
+    
   );
 }
 

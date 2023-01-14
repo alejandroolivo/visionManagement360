@@ -199,6 +199,11 @@ a:hover, a:active { text-decoration: none; color:rgb(0, 0, 0) }
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+Link{
+  background: transparent;
+  background-color: transparent;
+}
+
 .Main-button-class{    
     width: 33.33%;
     padding-top: 10;
@@ -268,13 +273,34 @@ a:hover, a:active { text-decoration: none; color:rgb(0, 0, 0) }
   border: 2px solid #ffffff;
 
 }
-
+/* -webkit-font-smoothing: antialiased;
+text-align: center;
+color: rgb(0, 0, 0);
+-webkit-text-size-adjust: 100%;
+list-style: none;
+list-style-type: none;
+cursor: pointer;
+line-height: 80px;
+font-weight: lighter;
+text-transform: none;
+font-family: 'Sora', sans-serif;
+font-size: large;
+letter-spacing: 4px;
+width: 280px;
+padding-top: 20px;
+background: transparent;
+background-color: transparent; */
 .Main-button-img-class{
-  padding-top: 20px;
+  padding-top: 20px;  
+  background: transparent;
+  color: transparent;
 }
 
 .Main-button-text-class{
   padding-top: -20px;
+  background: transparent;
+  background-color: transparent;
+  color: #ffffff;
 }
 
 .VSConfigPage-panel {
