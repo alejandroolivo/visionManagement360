@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import {Route, Routes, Link} from "react-router-dom";
+import React, { useState } from "react";
+import { Route, Routes, Link } from "react-router-dom";
 
 import logo from './logo.svg';
 import './App.css';
@@ -15,8 +15,8 @@ const Home = () => <h1>Home</h1>
 
 
 function App() {
-  
-  return (    
+
+  return (
     <div className="App">
       <head>
         <script
@@ -33,15 +33,15 @@ function App() {
       <div id='header-menu' className="App-header">
         <HeaderMenu />
       </div>
-      <body className="App-body">    
+      <body className="App-body">
         <Routes>
-          <Route path='/' element={<HomePage ></HomePage> } />
-          <Route path='/VSConfPage' element={<VisionSystemConfPage ></VisionSystemConfPage> } />
-          <Route path='/DLToolsPage' element={<DeepLearningToolsPage ></DeepLearningToolsPage> } />
-          <Route path='/hola' element={<DeepLearningToolsPage ></DeepLearningToolsPage> } />
-        </Routes>        
+          <Route path='/' element={<HomePage ></HomePage>} />
+          <Route path='/VSConfPage' element={<VisionSystemConfPage ></VisionSystemConfPage>} />
+          <Route path='/DLToolsPage' element={<DeepLearningToolsPage ></DeepLearningToolsPage>} />
+          <Route path='/hola' element={<DeepLearningToolsPage ></DeepLearningToolsPage>} />
+        </Routes>
         <p>
-          
+
         </p>
       </body>
     </div>

@@ -34,18 +34,19 @@
   bottom: 0;
   margin-inline-start: 30px;
   margin-inline-end: 30px;
-  margin-top:100px;
-  margin-bottom:200px;
+  margin-top: 100px;
+  margin-bottom: 200px;
   align-content: center;
   width: auto;
   border: 0px solid rgb(255, 255, 255);
   border-radius: 10px;
   background-color: #3898ec00;
   background-position: 0% 0%;
-  background-repeat:space;
+  background-repeat: space;
   background-color: white;
   background: transparent;
 }
+
 .App-body {
   text-align: center;
   display: flex;
@@ -62,6 +63,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

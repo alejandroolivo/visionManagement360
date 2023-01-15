@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Route, Routes, Link} from "react-router-dom";
 import './HeaderStyle.css';
+import './Components.css';
 
 import imgSource from './resources/treeview.png';
 import imgEnterSource from './resources/move.png';
@@ -15,7 +16,7 @@ const MainButton = (props) => {
             <picture  onMouseEnter={() => setOnMouseOverValue(false)} onMouseLeave={() => setOnMouseOverValue(true)}>            
                 <img  src={props.source} width={'280px'} height={'auto'} className="Main-button-img-class"/>
                 <h4 className="Main-button-text-class">{props.title}</h4>         
-                <img  src={imgEnterSource} width={'80px'} height={'auto'}/>         
+                <img className="Img-rotation-class" src={imgEnterSource} width={'80px'} height={'auto'}/>         
             </picture>
         </Link>        
     );

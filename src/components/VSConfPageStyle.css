@@ -1,30 +1,29 @@
-
-.form{
-    width:105%;
-    height:105%;
+.form {
+    width: 105%;
+    height: 105%;
     /* background:#e6e6e64a; */
     /* border-radius:8px; */
-    box-shadow:0 0 15px -10px rgb(231, 230, 230);
+    box-shadow: 0 0 15px -10px rgb(231, 230, 230);
     /* margin:calc(5px) auto; */
     /* padding:20px 30px;max-width:calc(100vw - 40px); */
-    box-sizing:border-box;
+    box-sizing: border-box;
     /* font-family:'Montserrat',sans-serif; */
     /* position:relative */
 }
 
-h2{
-    margin:10px;
-    padding-bottom:0px;
+h2 {
+    margin: 10px;
+    padding-bottom: 0px;
     padding-top: 30px;
     padding-left: 10px;
-    width:280px;
-    color:#000000;
-    border-bottom:0px solid #000000;
-    font-family:'Montserrat',sans-serif;
-    
+    width: 280px;
+    color: #000000;
+    border-bottom: 0px solid #000000;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
-.Info-text-class{
+.Info-text-class {
     font-weight: 100;
     text-align: left;
     padding-left: 20px;
@@ -33,35 +32,35 @@ h2{
     letter-spacing: 1px;
 }
 
-input{
-    width:30%;
-    padding:5px;
-    box-sizing:border-box;
-    background:none;
-    outline:none;
-    resize:none;
-    border:0;
-    font-family:'Montserrat',sans-serif;
-    transition:all .3s;
-    border-bottom:1px solid #d8d8d88a;
+input {
+    width: 30%;
+    padding: 5px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .3s;
+    border-bottom: 1px solid #d8d8d88a;
     display: flex;
     margin-left: 10%;
-    
+
 }
 
-input:focus{
-    border-bottom:2px solid #b8b8b8;
+input:focus {
+    border-bottom: 2px solid #b8b8b8;
     background-color: #ffffff00;
     border-radius: 0px;
 }
 
-p:before{
-    content:attr(type);
-    display:block;
-    margin:20px 0 0;
-    font-size:16px;
-    color:#000000;
-    display:flex;
+p:before {
+    content: attr(type);
+    display: block;
+    margin: 20px 0 0;
+    font-size: 16px;
+    color: #000000;
+    display: flex;
     margin-left: 12%;
 }
 
@@ -90,23 +89,23 @@ button:hover{
     text-transform: uppercase;
     position: relative;
     transition: .2s ease;
-    align-content:flex-start;
+    align-content: flex-start;
     display: flex;
     flex-direction: row;
-    padding-top:40px;
-    padding-left:60px;
-    margin-right: 20px;   
-    margin-left: 20px; 
-  }
-  
-  
-  .Button-VSConfPage {
+    padding-top: 40px;
+    padding-left: 60px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+.Button-VSConfPage {
     --color: #ffdd00;
     padding: 0.8em 1.7em;
-    margin-top:2px;
+    margin-top: 2px;
     margin-bottom: 5px;
-    margin-right:20px;
-    margin-left:20px;
+    margin-right: 20px;
+    margin-left: 20px;
     background-color: transparent;
     border-radius: .6em;
     position: relative;
@@ -119,10 +118,11 @@ button:hover{
     font-family: inherit;
     color: var(--color);
     z-index: 1;
-    
-   }
-   
-   .Button-VSConfPage::before, .Button-VSConfPage::after {
+    max-width: 250px;
+}
+
+.Button-VSConfPage::before,
+.Button-VSConfPage::after {
     content: '';
     display: block;
     width: 50px;
@@ -132,59 +132,60 @@ button:hover{
     border-radius: 50%;
     z-index: -1;
     background-color: var(--color);
-    transition: 1s ease;
-   }
-   
-   .Button-VSConfPage::before {
+    transition: .5s ease;
+}
+
+.Button-VSConfPage::before {
     top: -1em;
     left: -1em;
-   }
-   
-   .Button-VSConfPage::after {
+}
+
+.Button-VSConfPage::after {
     left: calc(100% + 1em);
     top: calc(100% + 1em);
-   }
-   
-   .Button-VSConfPage:hover::before, .Button-VSConfPage:hover::after {
+}
+
+.Button-VSConfPage:hover::before,
+.Button-VSConfPage:hover::after {
     height: 410px;
     width: 410px;
-   }
-   
-   .Button-VSConfPage:hover {
+}
+
+.Button-VSConfPage:hover {
     color: rgb(10, 25, 30);
-   }
-   
-   .Button-VSConfPage:active {
+}
+
+.Button-VSConfPage:active {
     filter: brightness(.8);
-   }
+}
 
-   .VSConfigPage-panel-setting{
-        --color: #ffdd00;
-        padding: 0.8em 1.2em;
-        margin-top:0px;
-        margin-right:0px;
-        background-color: transparent;
-        border-radius: .6em;
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
-        transition: .2s;
-        font-weight: 600;
-        font-size: 2px;
-        font-family: inherit;
-        color: var(--color);
-        z-index: 1;
-        border: 0px #ffdd00;
-        display:inline;
-        align-content:left;
-   }
-   
-   form{
-    background-color: #ffffff43;
-    margin-bottom:10px;
-   }
+.VSConfigPage-panel-setting {
+    --color: #ffdd00;
+    padding: 0.8em 1.2em;
+    margin-top: 0px;
+    margin-right: 0px;
+    background-color: transparent;
+    border-radius: .6em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .2s;
+    font-weight: 600;
+    font-size: 2px;
+    font-family: inherit;
+    color: var(--color);
+    z-index: 1;
+    border: 0px #ffdd00;
+    display: inline;
+    align-content: left;
+}
 
-   .VSPage-class{
+form {
+    background-color: #b1b1b1a4;
+    margin-bottom: 10px;
+}
+
+.VSPage-class {
     height: auto;
     background-color: transparent;
-   }
+}
